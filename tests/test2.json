@@ -1,0 +1,24 @@
+{
+  "msg-version": "1.0",
+  "msg-type":  "app-config",
+  "content": "aaa"
+}
+
+{
+  "msg-version": "1.0",
+  "msg-type":  "app-config",
+  "content": "bbb"
+}
+
+{
+  "msg-version": "1.0",
+  "msg-type":  "app-config",
+  "content": "ccc"
+}
+
+{
+  "msg-version": "1.0",
+  "msg-type":  "app-config",
+  "content": "ddd",
+  "breakit": { "a":"b"}
+}

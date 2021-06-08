@@ -1,0 +1,5 @@
+HOST=localhost
+TOPIC=test
+QOS=2
+# ID will be used if QOS > 0
+ID=server

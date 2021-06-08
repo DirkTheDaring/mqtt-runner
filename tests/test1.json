@@ -1,0 +1,5 @@
+{
+  "msg-version": "1.0",
+  "msg-type":  "app-config",
+  "content": "aaa"
+}
