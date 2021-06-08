@@ -17,6 +17,8 @@ for FILENAME in /etc/mqtt-runner.conf $HOME/.mqtt-runner.conf $DIRNAME/mqtt-runn
     fi
 done
 
+CONFIGURATION_FILE=mqtt-runner.conf
+
 while [[ $# > 0 ]]
 do
     ARG="$1"
@@ -37,7 +39,12 @@ do
     shift
 done
 
-. "$CONFIGURATION_FILE"
+if [ -f "$CONFIGURATION_FILE" ]; then
+    . "$CONFIGURATION_FILE"
+else
+    echo "config file not found: $CONFIGURATION_FILE"
+    exit 1
+fi
 
 HOST=${HOST:="localhost"}
 TOPIC=${TOPIC:="test"}
